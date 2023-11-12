@@ -9,6 +9,7 @@ import {
 } from "@/network/shop/typing";
 import service from "../request";
 import { e } from "vitest/dist/reporters-2ff87305.js";
+import { onMounted } from "vue";
 //import { MallOrderStatus } from "@/views/user/orderManagement/constants";
 
 export function getGoodsList(data: ApiGoodListParams): Promise<ApiGoodList | null> {
