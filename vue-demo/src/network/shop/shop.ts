@@ -33,7 +33,7 @@ export interface ApiResult<T> {
 export function getShopDetail(id: number | string = 1): Promise<ApiResult<ApiGood>> {
   return service
     .request({
-      url: "/backend/mall/item/details",
+      url: "https://api-dev.torakuji.com/api/box/detail",
       method: "post",
       data: {
         id: id,
